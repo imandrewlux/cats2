@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+}
+
+
+/* Type Styles */
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	letter-spacing: .2px;
+	margin: auto;
+}
+
+h1 {
+	font-family: 'Corben', serif;
+	font-weight: 800;
+	letter-spacing: 3px;
+	font-size: 20vw;
+	line-height: 1.5;
+	color: white;
+}
+
+h2 {
+	font-family: 'Corben', serif;
+	font-size: 5vw;
+	line-height: 1.1;
+	margin-bottom: 30px;
+	font-weight: 700;
+	color: #f4027b;
+}
+
+h3 {
+	font-size: 1.6em;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: #f4027b;
+
+}
+
+p, li {
+	font-size: 1.2em;
+	line-height: 1.4;
+	margin-bottom: 14px;
+	color: #603a26;
+}
+
+p {
+}
+
+ul, ol {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+ol {
+
+}
+
+.intro {
+	font-size: 1.6em;
+	color: white;
+	font-weight: 700;
+	max-width: 700px;
+	margin-bottom: 0;
+}
+
+.caption {
+	font-family: 'Corben', serif;
+	font-size: 1.6em;
+	font-weight: 400;
+	margin-top: 4px;
+}
+
+.first {
+	margin-top: 6vh;
+}
+
+.name {
+	font-weight: 700;
+}
+
+ .blink {
+    color: #f4027b;
+    font-weight: 700;
+    -webkit-animation: blink .5s infinite alternate;
+    -moz-animation: blink .5s infinite alternate;  
+    -ms-animation: blink .5s infinite alternate;  
+    -o-animation: blink .5s infinite alternate;  
+    animation: blink .5s infinite alternate;   
+ }
+
+ .lean:hover {
+ 	display: inline-block;
+ 	-webkit-animation: lean .5s linear infinite alternate;
+ 	-moz-animation: lean .5s linear infinite alternate;
+ 	-ms-animation: lean .5s linear infinite alternate;
+ 	-o-animation: lean .5s linear infinite alternate;
+ 	animation: lean .5s linear infinite alternate;
+ }
+
+ .fadein {
+ 	-webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s;  
+    -ms-animation: fadein 3s;  
+    -o-animation: fadein 3s;  
+    animation: fadein 3s;
+ }
+
+ .fadein-delay {
+ 	-webkit-animation: fadein 1s 3s backwards;
+    -moz-animation: fadein 1s 3s backwards;  
+    -ms-animation: fadein 1s 3s backwards;  
+    -o-animation: fadein 1s 3s backwards;  
+    animation: fadein 1s 3s backwards;
+ }
+
+ .fadein-delay-2 {
+ 	-webkit-animation: fadein 1s 3.5s backwards;
+    -moz-animation: fadein 1s 3.5s backwards;  
+    -ms-animation: fadein 1s 3.5s backwards;  
+    -o-animation: fadein 1s 3.5s backwards;  
+    animation: fadein 1s 3.5s backwards;
+ }
+
+
+/* Layout */
+
+.container {
+	width: 90vw;
+	max-width: 600px;
+  	margin: auto;
+}
+
+.container.last {
+  	margin: 0 auto 200px;
+}
+
+.bg {
+	padding: 3em 0;
+}
+
+.bg.peach {
+	background: #f7ebd9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f7ebd9, #ffecea); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f7ebd9, #ffecea); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f7ebd9, #ffecea); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f7ebd9, #ffecea); /* Standard syntax */
+}
+
+.bg.pink {
+	background: #ffecea; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ffecea, #f7ebd9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffecea, #f7ebd9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffecea, #f7ebd9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffecea, #f7ebd9); /* Standard syntax */
+}
+
+hr {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+    border: 0;
+    margin: 2em 0 1.1em 0;
+}
+
+
+/* Images */
+
+.gallery {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.gallery:nth-of-type(1){
+	width:48%;
+	margin-left:0.5%;
+}
+.gallery:nth-of-type(2){
+	width:48%;
+	margin-right:0.5%;
+}
+
+.paws {
+	max-width: 100%;
+	height: 35vh;
+	background-image: url('images/paws-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.izzy {
+	max-width: 100%;
+  	height: 35vh;
+  	background-image: url('images/izzy-bg.png');
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Navigation */
+
+.navigation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: tomato;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+
+.navigation .icon {
+	display: none;
+}
+
+.navigation li {
+	font-size: .9em;
+	font-weight: 700;
+	letter-spacing: .8px;
+	display: inline-block;
+	margin: 0;
+}
+
+.navigation li a {
+	display: block;
+	color: white;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+.navigation li a:hover {
+	color: #ffc1cc;
+	transition: .3s 
+	-ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg); /* Standard syntax */
+}
+
+@media screen and (max-width: 900px) {
+
+	.navigation li a {
+		display: none;
+	}
+
+	.navigation a.icon {
+		float: right;
+		display: block;
+		padding: 4px 20px;
+		color: white;
+		font-size: 26px;
+		text-decoration: none;
+	}
+
+	.navigation.responsive {
+		position: relative;
+	}
+
+  	.navigation.responsive a.icon {
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+  	}
+
+  	.navigation.responsive li  {
+    	width: 100%;
+    	display: block;
+  	}
+
+  	.navigation.responsive li a {
+    	float: none;
+    	display: block;
+    	font-size: 5vh;
+    	line-height: 1.1;
+    	text-align: left;
+    	padding: 2vh 10vw;
+
+  	}
+
+  	.navigation.responsive li:nth-of-type(1) {
+  		margin-top: 6vh;
+  	}
+
+  	.navigation.responsive li:nth-of-type(6) {
+  		margin-bottom: 10vh;
+  	}
+}
+
+
+:target:before {
+content:"";
+display:block;
+height:48px; /* fixed header height*/
+margin:-48px 0 0; /* negative fixed header height */
+}
+
+
+/* Banner */
+
+#banner {
+  height: 90vh;
+  background-image: linear-gradient(purple 0%, red 80%), 
+  linear-gradient(to right, purple 0%, yellow 100%),url('http://www.quntfront.com/wp-content/uploads/2016/01/manycats.jpg');
+  background-blend-mode: screen, difference, lighten;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;  
+  -ms-animation: fadein 3s;  
+  -o-animation: fadein 3s;  
+  animation: fadein 3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+}
+
+/* Animation */
+
+@-webkit-keyframes blink {
+   from { color: #603a26; }
+   to { color: tomato; }
+  }
+ @-moz-keyframes blink {
+   from { color: #603a26; }
+   to { color: tomato; }
+ }
+ @-ms-keyframes blink {
+   from { color: #603a26; }
+   to { color: tomato; }
+ }
+ @-o-keyframes blink {
+   from { color: #603a26; }
+   to { color: tomato; }
+ }
+ @keyframes blink {
+   from { color: #603a26; }
+   to { color: tomato; }
+ }
+
+
+@-moz-keyframes lean { 
+	0% { -moz-transform: skewX(0deg); } 
+	100% { -moz-transform: skewX(20deg); }
+	from { color: white; }
+	to { color: #ffc1cc; }
+}
+@-webkit-keyframes lean {  
+	0% { -webkit-transform: skewX(0deg); } 
+	100% { -webkit-transform: skewX(20deg); }
+	from { color: white; }
+	to { color: #ffc1cc; }
+}
+@keyframes lean { 
+	0% { -webkit-transform: skewX(0deg); transform: skewX(0deg); } 
+	100% { -webkit-transform: skewX(20deg); transform: skewX(20deg); }
+	from { color: white; }
+	to { color: #ffc1cc; }
+}
+
+
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+
+/* Responsive */
+
+@media only screen  
+and (max-width : 736px){
+
+	.gallery:nth-of-type(1){
+		width:100%;
+		margin-left:0;
+		display: block;
+	}
+
+	.gallery:nth-of-type(2){
+		width:100%;
+		margin-right:0;
+		display: block;
+	}
+
+	.paws {
+		height: 45vh;
+}
+
+	.izzy {
+	  	height: 45vh;
+	}
+
+	.container {
+		width: 86vw;
+	}
+
+	.bg {
+		padding: 2em 0;
+	}
+
+	.intro {
+		width: 80vw;
+		margin-left: 8vw;
+	}
+
+	h1 {
+		margin-left: 8vw;
+	}
+
+	h2 {
+		font-size: 8vw;
+		margin-bottom: 26px;
+	}
+
+	.first {
+		margin-top: 10vh;
+	}
+
+	#banner {
+	  	height: 60vh;
+	  	align-items: left;
+	  	text-align: left;
+	}
+}
+
+@media only screen  
+and (max-width : 736px) {
+
+}
+
+
+
+
